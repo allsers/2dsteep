@@ -1,3 +1,7 @@
 [gd_scene format=3 uid="uid://bsl0betv8541g"]
 
 [node name="World" type="Node2D"]
+
+[node name="Terrain" type="TileMapLayer" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
