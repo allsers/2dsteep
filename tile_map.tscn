@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://ciewbnl60gtdy"]
+
+[ext_resource type="Script" path="res://tiles_generation.gd" id="1_88mga"]
+
+[node name="TileMap" type="TileMap"]
+format = 2
+script = ExtResource("1_88mga")

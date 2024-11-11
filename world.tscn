@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://bsl0betv8541g"]
+[gd_scene load_steps=6 format=3 uid="uid://bsl0betv8541g"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_5qkml"]
 [ext_resource type="PackedScene" uid="uid://bavd3f8112vwq" path="res://player.tscn" id="1_b4grr"]
 [ext_resource type="Script" path="res://CameraController.gd" id="1_oxcl1"]
+[ext_resource type="PackedScene" uid="uid://ciewbnl60gtdy" path="res://tile_map.tscn" id="4_cygq3"]
+
+[sub_resource type="TileSet" id="TileSet_prrb6"]
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_5qkml")
@@ -14,3 +17,7 @@ script = ExtResource("1_oxcl1")
 player = NodePath("../Player")
 
 [node name="Player" parent="." instance=ExtResource("1_b4grr")]
+script = null
+
+[node name="TileMap" parent="." instance=ExtResource("4_cygq3")]
+tile_set = SubResource("TileSet_prrb6")
