@@ -1,11 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://bsl0betv8541g"]
+[gd_scene load_steps=4 format=3 uid="uid://bsl0betv8541g"]
 
-[ext_resource type="PackedScene" uid="uid://bavd3f8112vwq" path="res://player.tscn" id="1_x57ki"]
+[ext_resource type="Script" path="res://world.gd" id="1_5qkml"]
+[ext_resource type="PackedScene" uid="uid://bavd3f8112vwq" path="res://player.tscn" id="1_b4grr"]
+[ext_resource type="Script" path="res://CameraController.gd" id="1_oxcl1"]
 
 [node name="World" type="Node2D"]
+script = ExtResource("1_5qkml")
 
 [node name="Terrain" type="TileMapLayer" parent="."]
 
 [node name="Player" parent="." instance=ExtResource("1_x57ki")]
 
 [node name="Camera2D" type="Camera2D" parent="."]
+script = ExtResource("1_oxcl1")
+player = NodePath("../Player")
+
+[node name="Player" parent="." instance=ExtResource("1_b4grr")]
