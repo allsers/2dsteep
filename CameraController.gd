@@ -9,7 +9,7 @@ func _ready() -> void:
 	player_node = get_node(player)
 	world_node = get_parent()
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+
 func _process(delta: float) -> void:
 	if player_node:
 		global_position.y = player_node.global_position.y

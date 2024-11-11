@@ -9,8 +9,6 @@ script = ExtResource("1_5qkml")
 
 [node name="Terrain" type="TileMapLayer" parent="."]
 
-[node name="Player" parent="." instance=ExtResource("1_x57ki")]
-
 [node name="Camera2D" type="Camera2D" parent="."]
 script = ExtResource("1_oxcl1")
 player = NodePath("../Player")
