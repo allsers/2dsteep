@@ -1,8 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://bavd3f8112vwq"]
+[gd_scene load_steps=3 format=3 uid="uid://bavd3f8112vwq"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_ji571"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rlf7o"]
 
 [node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_ji571")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 

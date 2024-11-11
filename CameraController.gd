@@ -4,7 +4,7 @@ extends Camera2D
 var player_node: Node2D
 var world_node: Node2D
 
-# Called when the node enters the scene tree for the first time.
+
 func _ready() -> void:
 	player_node = get_node(player)
 	world_node = get_parent()
