@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://dv71rmv1axly0"]
+
+[ext_resource type="Script" path="res://main_menu.gd" id="1_2xfct"]
+[ext_resource type="Texture2D" uid="uid://dbpwjx8e5pt0t" path="res://Assets/Menu-imgs/start-button.png" id="2_vcquc"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -3.0
+offset_right = 1.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2xfct")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -159.0
+offset_top = -24.0
+offset_right = -23.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2, 2)
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_vcquc")
+texture_pressed = ExtResource("2_vcquc")
+texture_hover = ExtResource("2_vcquc")
+texture_focused = ExtResource("2_vcquc")
