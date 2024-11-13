@@ -14,6 +14,7 @@ func _process(delta: float) -> void:
 	if player_node:
 		# Calculate target position
 		var target_pos = player_node.global_position
+		target_pos += Vector2(0, 75)
 		
 		global_position = global_position.lerp(target_pos, smooth_speed * delta)
 		

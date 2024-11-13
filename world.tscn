@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://world.gd" id="1_5qkml"]
 [ext_resource type="PackedScene" uid="uid://bavd3f8112vwq" path="res://player.tscn" id="1_b4grr"]
 [ext_resource type="Script" path="res://CameraController.gd" id="1_oxcl1"]
-[ext_resource type="PackedScene" path="res://tile_map.tscn" id="4_cygq3"]
+[ext_resource type="PackedScene" uid="uid://ciewbnl60gtdy" path="res://tile_map.tscn" id="4_cygq3"]
 [ext_resource type="Texture2D" uid="uid://cwskusmjk3psw" path="res://Assets/snow_bg.png" id="5_s24nx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vvedw"]
