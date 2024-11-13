@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://world.gd" id="1_5qkml"]
 [ext_resource type="PackedScene" uid="uid://bavd3f8112vwq" path="res://player.tscn" id="1_b4grr"]
 [ext_resource type="Script" path="res://CameraController.gd" id="1_oxcl1"]
-[ext_resource type="PackedScene" uid="uid://ciewbnl60gtdy" path="res://tile_map.tscn" id="4_cygq3"]
-[ext_resource type="Texture2D" uid="uid://cwskusmjk3psw" path="res://snow_bg.png" id="5_s24nx"]
+[ext_resource type="PackedScene" path="res://tile_map.tscn" id="4_cygq3"]
+[ext_resource type="Texture2D" uid="uid://cwskusmjk3psw" path="res://Assets/snow_bg.png" id="5_s24nx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vvedw"]
 texture = ExtResource("5_s24nx")
@@ -390,16 +390,16 @@ script = ExtResource("1_5qkml")
 [node name="Terrain" type="TileMapLayer" parent="."]
 
 [node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2.4, 2.4)
 script = ExtResource("1_oxcl1")
 player = NodePath("../Player")
-smooth_speed = 2.0
 
 [node name="Player" parent="." instance=ExtResource("1_b4grr")]
-script = null   
+z_index = 1
 
 [node name="TileMap" parent="." instance=ExtResource("4_cygq3")]
 tile_set = SubResource("TileSet_prrb6")
 
-[node name="Layer0" type="TileMapLayer" parent="TileMap"]
+[node name="Layer1" type="TileMapLayer" parent="TileMap"]
 use_parent_material = true
 tile_set = SubResource("TileSet_prrb6")

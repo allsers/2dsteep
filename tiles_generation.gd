@@ -9,8 +9,6 @@ var altitude = FastNoiseLite.new()
 var width = 128
 var height = 128
 
-
-
 func _ready() -> void:
 	moisture.seed = randi()
 	temperature.seed = randi()
