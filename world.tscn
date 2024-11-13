@@ -395,7 +395,7 @@ player = NodePath("../Player")
 smooth_speed = 2.0
 
 [node name="Player" parent="." instance=ExtResource("1_b4grr")]
-script = null
+script = null   
 
 [node name="TileMap" parent="." instance=ExtResource("4_cygq3")]
 tile_set = SubResource("TileSet_prrb6")
