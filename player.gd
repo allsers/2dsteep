@@ -25,6 +25,7 @@ func _physics_process(delta: float) -> void:
 	update_animation(direction)  # Pass direction to update animation
 
 	global_position.x = clamp(global_position.x, -780, 780)
+	
 
 func update_animation(direction: float):
 	var sprite = $Sprite2D

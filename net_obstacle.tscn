@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://coc5vdi1h1o51"]
+
+[ext_resource type="Texture2D" uid="uid://bo300m6tb6r2t" path="res://Assets/plastic-net.png" id="1_cokcq"]
+[ext_resource type="Script" path="res://net.gd" id="1_wrb7d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dmfng"]
+size = Vector2(52, 20)
+
+[node name="Net" type="Node2D"]
+
+[node name="net" type="Node2D" parent="."]
+script = ExtResource("1_wrb7d")
+
+[node name="TextureRect" type="TextureRect" parent="net"]
+z_index = 2
+offset_left = -32.0
+offset_top = -16.0
+offset_right = 32.0
+offset_bottom = 16.0
+texture = ExtResource("1_cokcq")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="net"]
+position = Vector2(0, -9.23872e-07)
+scale = Vector2(2.6, 1)
+
+[node name="RigidBody2D" type="RigidBody2D" parent="net"]
+contact_monitor = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="net/RigidBody2D"]
+shape = SubResource("RectangleShape2D_dmfng")

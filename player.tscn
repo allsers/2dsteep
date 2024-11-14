@@ -120,6 +120,7 @@ _data = {
 script = ExtResource("1_ji571")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 4
 position = Vector2(0, -23)
 texture = ExtResource("2_kpaij")
 flip_v = true

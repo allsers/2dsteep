@@ -401,3 +401,8 @@ tile_set = SubResource("TileSet_prrb6")
 [node name="Layer1" type="TileMapLayer" parent="TileMap"]
 use_parent_material = true
 tile_set = SubResource("TileSet_prrb6")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
