@@ -5,6 +5,10 @@ func _ready():
 	$start_btn/TextureButton.pressed.connect(_on_StartButton_pressed)
 	$quit_btn/TextureButton.pressed.connect(_on_QuitButton_pressed)
 
+func _process(delta: float) -> void:
+	if Input.is_action_just_pressed("jump"):
+		get_tree().change_scene_to_file("res://world.tscn")
+
 func _on_StartButton_pressed():
 	# Change the scene to world.tscn
 	get_tree().change_scene_to_file("res://world.tscn")

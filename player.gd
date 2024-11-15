@@ -25,7 +25,7 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	update_animation(direction)  # Pass direction to update animation
 
-	global_position.x = clamp(global_position.x, -1200, 1200)
+	#global_position.x = clamp(global_position.x, -1200, 1200)
 	
 
 func update_animation(direction: float):

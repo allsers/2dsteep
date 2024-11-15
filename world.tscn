@@ -53,7 +53,7 @@ use_parent_material = true
 tile_set = SubResource("TileSet_2oca3")
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 0.7
+wait_time = 0.5
 autostart = true
 
 [node name="HUD" parent="." instance=ExtResource("6_tnd1k")]
