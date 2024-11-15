@@ -3,6 +3,8 @@ extends Node2D
 @export var MAX_WIDTH = 1000
 
 var net_scene = preload("res://net_obstacle.tscn")
+var stone_scene = preload("res://stone_obstacle.tscn")
+
 
 func _ready() -> void:
 	pass
@@ -15,4 +17,6 @@ func _process(delta: float) -> void:
 
 func _on_timer_timeout() -> void:
 	var net = net_scene.instantiate()
+	var stone = stone_scene.instantiate()
 	add_child(net)
+	add_child(stone)

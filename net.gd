@@ -2,9 +2,6 @@ extends Area2D
 
 var rng = RandomNumberGenerator.new()
 
-func _on_visible_on_screen_notifier_2d_screen_exited():
-	queue_free()
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	var player_pos = get_node("../../Player").get_position()
@@ -23,3 +20,4 @@ func _process(delta: float) -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	get_tree().change_scene_to_file("res://main_menu.tscn")
+	print("Score: ", round(get_node("../../Player").score))

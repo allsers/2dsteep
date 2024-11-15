@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://net.gd" id="1_wrb7d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dmfng"]
-size = Vector2(52, 20)
+size = Vector2(63.5, 25)
 
 [node name="Net" type="Node2D"]
 
@@ -13,17 +13,16 @@ script = ExtResource("1_wrb7d")
 
 [node name="TextureRect" type="TextureRect" parent="Area2D"]
 z_index = 2
-offset_left = -32.0
-offset_top = -16.0
-offset_right = 32.0
-offset_bottom = 16.0
+offset_left = -39.0
+offset_top = -36.0
+offset_right = 25.0
+offset_bottom = -4.0
+scale = Vector2(1.2, 1.2)
 texture = ExtResource("1_cokcq")
-
-[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="Area2D"]
-position = Vector2(0, -9.23872e-07)
-scale = Vector2(2.6, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-0.75, -18)
 shape = SubResource("RectangleShape2D_dmfng")
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
