@@ -23,13 +23,13 @@ anchor_left = 0.505
 anchor_top = 0.59
 anchor_right = 0.505
 anchor_bottom = 0.59
-offset_left = -135.53
-offset_top = 12.81
-offset_right = 0.469971
-offset_bottom = 52.81
+offset_left = -206.76
+offset_top = 17.68
+offset_right = -70.76
+offset_bottom = 57.68
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(2, 2)
+scale = Vector2(3, 3)
 
 [node name="TextureButton" type="TextureButton" parent="quit_btn"]
 layout_mode = 2
@@ -45,13 +45,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -129.77
-offset_top = -39.53
-offset_right = 6.22998
-offset_bottom = 0.470001
+offset_left = -201.0
+offset_top = -124.0
+offset_right = -65.0
+offset_bottom = -84.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(2, 2)
+scale = Vector2(3, 3)
 
 [node name="TextureButton" type="TextureButton" parent="start_btn"]
 layout_mode = 2

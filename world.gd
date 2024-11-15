@@ -18,5 +18,6 @@ func _process(delta: float) -> void:
 func _on_timer_timeout() -> void:
 	var net = net_scene.instantiate()
 	var stone = stone_scene.instantiate()
-	add_child(net)
+	
 	add_child(stone)
+	add_child(net)

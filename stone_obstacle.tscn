@@ -7,6 +7,7 @@
 size = Vector2(20, 12)
 
 [node name="Stone-obstacle" type="Node2D"]
+position = Vector2(0, 176)
 
 [node name="Area2D" type="Area2D" parent="."]
 script = ExtResource("1_4q0jh")

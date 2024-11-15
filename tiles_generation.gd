@@ -7,7 +7,7 @@ var moisture = FastNoiseLite.new()
 var temperature = FastNoiseLite.new()
 var altitude = FastNoiseLite.new()
 var width = 0
-var height = 38
+var height = 64
 var blank_tiles = [Vector2i(1,4), Vector2i(2,4)]
 var last_random_tile = 0
 var styled_tiles = [Vector2i(0,0),Vector2i(0,1),Vector2i(0,2),Vector2i(0,3),Vector2i(0,4),Vector2i(0,5),Vector2i(0,6), Vector2i(1,0), Vector2i(1,1),Vector2i(1,2),Vector2i(1,3),Vector2i(1,5),Vector2i(1,6),Vector2i(2,0), Vector2i(2,1),Vector2i(2,2),Vector2i(2,3),Vector2i(2,5),Vector2i(2,6)]
@@ -19,7 +19,7 @@ func _ready() -> void:
 	temperature.seed = randi()
 	altitude.seed = randi()
 	world_node = get_parent()
-	width = world_node.MAX_WIDTH
+	width = 128#world_node.MAX_WIDTH
 
 
 

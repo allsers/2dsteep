@@ -4,11 +4,12 @@ var score = 0
 
 const SPEED = 200.0
 const SKI_VELOCITY = 150.0
-const MAX_SKI_VELOCITY = 400.0
+const MAX_SKI_VELOCITY = 500.0
 var current_ski_velocity = SKI_VELOCITY
 
 # Rotation variable to hold the current rotation
 var target_rotation = 0.0
+
 
 func _physics_process(delta: float) -> void:
 	score += current_ski_velocity * delta

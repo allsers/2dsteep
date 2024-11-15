@@ -9,8 +9,8 @@ func _ready() -> void:
 	var playery = player_pos.y
 	
 	set_position(Vector2(
-		rng.randf_range(playerx-350, playerx+350),
-		rng.randf_range(playery+300, playery+400)
+		rng.randf_range(playerx-500, playerx+500),
+		rng.randf_range(playery+500, playery+600)
 		))
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

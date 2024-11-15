@@ -133,5 +133,7 @@ autoplay = "ski"
 speed_scale = 1.5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -4.5)
+position = Vector2(0, -4.44)
 shape = SubResource("RectangleShape2D_rlf7o")
+
+[connection signal="ready" from="." to="." method="_on_ready"]
