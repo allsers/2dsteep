@@ -3,9 +3,6 @@
 [ext_resource type="Script" path="res://player.gd" id="1_ji571"]
 [ext_resource type="Texture2D" uid="uid://h0xwy6x1k0fe" path="res://Assets/skier.png" id="2_kpaij"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rlf7o"]
-size = Vector2(20, 44)
-
 [sub_resource type="Animation" id="Animation_hqqyo"]
 length = 0.001
 tracks/0/type = "value"
@@ -116,19 +113,17 @@ _data = {
 "ski": SubResource("Animation_ddwks")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rlf7o"]
+size = Vector2(14, 29)
+
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_ji571")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = 4
-position = Vector2(0, -23)
 texture = ExtResource("2_kpaij")
 flip_v = true
 hframes = 6
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -25)
-shape = SubResource("RectangleShape2D_rlf7o")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -136,3 +131,7 @@ libraries = {
 }
 autoplay = "ski"
 speed_scale = 1.5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -4.5)
+shape = SubResource("RectangleShape2D_rlf7o")
